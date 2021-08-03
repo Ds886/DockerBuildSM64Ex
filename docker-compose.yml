@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+    buildsm:
+      build: ./
+      volumes:
+        - ./release:/opt/release
+        - ./baserom.us.z64:/opt/baserom.us.z64
+      environment:
+        - makeopt=BETTERCAMERA=1 EXTERNAL_DATA=1 -j4
