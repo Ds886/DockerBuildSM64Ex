@@ -13,7 +13,7 @@ docker-compose build
 
 1. Run the docker image using the command
 ```
-docker-compose up
+docker-compose run --rm main
 ```
 
 1. The output of the build should be found under the folder release
